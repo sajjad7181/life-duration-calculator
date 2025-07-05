@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life duration calculator</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+
+        <div class="card shadow">
+            <div class="card-header">
+                <h1 class="text-center">
+                    Life duration calculator
+                </h1>
+
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="birthDate">
+                        Enter your birthdate:
+                    </label>
+                    <input type="date" class="form-control" id="birthDate">
+                </div>
+
+                <button class="btn btn-primary btn-block" onclick="calculateAge()">
+                    calculate
+                </button>
+            </div>
+            <div class="card-footer text-muted">
+                <div id="result" class="mt-4 d-none">
+                    <h5 class="mb-3">You've been alive for:</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item">🗓 <span id="days"></span> days</li>
+                      <li class="list-group-item">📅 <span id="weeks"></span> weeks</li>
+                      <li class="list-group-item">🕒 <span id="months"></span> months</li>
+                      <li class="list-group-item">👴 <span id="years"></span> years</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
